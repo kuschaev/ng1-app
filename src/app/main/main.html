@@ -1,0 +1,24 @@
+<div layout="row" flex layout-fill>
+  <md-sidenav
+    flex="none"
+    class="md-sidenav-left"
+    md-component-id="left"
+    md-is-locked-open="$mdMedia('gt-md')"
+    md-whiteframe="4">
+
+    <md-toolbar class="md-theme-indigo">
+      <h1 class="md-toolbar-tools">Sidenav Left</h1>
+    </md-toolbar>
+    <md-content layout-padding>
+      <md-list>
+        <md-list-item ng-repeat="route in main.routes" ng-click="main.goToRoute(route.route)">
+          <div> {{route.name}}</div>
+        </md-list-item>
+      </md-list>
+
+    </md-content>
+
+  </md-sidenav>
+  <div ui-view flex layout-fill layout="column"></div>
+
+</div>
