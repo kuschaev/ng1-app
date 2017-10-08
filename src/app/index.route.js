@@ -18,6 +18,6 @@ export function routerConfig ($stateProvider, $urlRouterProvider) {
       controller: 'MController',
       controllerAs: 'mCtrl'
     });
-  //google api code (unused): AIzaSyBVCfw3LliigqcFFzNKdcGU-wYTbrWHiwA
+  // AIzaSyBVCfw3LliigqcFFzNKdcGU-wYTbrWHiwA
   $urlRouterProvider.otherwise('/maps');
 }
