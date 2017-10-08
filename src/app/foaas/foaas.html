@@ -3,25 +3,32 @@
     <md-icon>home</md-icon>
   </md-button>
   <div class="md-toolbar-tools">
-    <h2 class="md-flex">Toolbar: md-warn</h2>
+    <h2 class="md-flex">FOAAS ng app</h2>
   </div>
 </md-toolbar>
 
 <md-content flex layout-padding layout-fill>
-  FOAAS
-  <div layout="row">
-    <md-input-container>
-      <label>Who</label>
-      <input ng-model="fCtrl.who" ng-model-options='{ debounce: 1000 }' ng-change="fCtrl.offWrapper()">
-    </md-input-container>
+  <div layout="column" layout-align="start left">
+    
+    <div layout="row" layout-align="start left">
+      <md-input-container>
 
-    <md-input-container>
-      <label>From</label>
-      <input ng-model="fCtrl.from" ng-model-options='{ debounce: 1000 }' ng-change="fCtrl.offWrapper()">
-    </md-input-container>
+          <label>Who</label>
+          <input ng-model="fCtrl.who" ng-model-options='{ debounce: 1000 }' ng-change="fCtrl.offWrapper()">
+
+      </md-input-container>
+
+      <md-input-container>
+
+          <label>From</label>
+          <input ng-model="fCtrl.from" ng-model-options='{ debounce: 1000 }' ng-change="fCtrl.offWrapper()">
+
+      </md-input-container>
+    </div>
+
   </div>
-<span class="md-display-2">{{fCtrl.fuckOffObject.message}} </span>
-<span class="md-body-1">{{fCtrl.fuckOffObject.subtitle}} </span>
+<span class="md-display-2">{{fCtrl.fuckOffObject.message}}</span>
+<span class="md-display-1">{{fCtrl.fuckOffObject.subtitle}}</span>
 
 
 </md-content>

@@ -3,7 +3,6 @@ export class MController {
     'ngInject';
     this._mdSidenav = $mdSidenav;
     console.log('MController');
-    // http://foaas.com/off/Tom/Vova
     console.log(NgMap);
     this.address = 'Kyiv';
     NgMap.getMap().then((map) => {
