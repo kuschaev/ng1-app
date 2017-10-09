@@ -27,8 +27,14 @@ export class FController {
       console.log('error');
     });
   }
-
+/*
+  clearInputs() {
+    this.who = '';
+    this.from = '';
+  }
+*/
   openLN() {
     this._mdSidenav('left').open();
   }
+
 }
