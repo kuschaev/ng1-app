@@ -4,7 +4,7 @@ export class MController {
     this._mdSidenav = $mdSidenav;
     console.log('MController');
     console.log(NgMap);
-    this.address = 'Troieshchyna';
+    this.address = 'Kyiv';
     NgMap.getMap().then((map) => {
       this.map = map;
       console.log(map.getCenter());
