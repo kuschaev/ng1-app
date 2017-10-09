@@ -6,29 +6,35 @@ export class FController {
     console.log('FController');
     this.who = '';
     this.from = '';
-    this.fuckOffObject = {};
+    this.goFYObject = {};
   }
 
-  offWrapper() {
+  fyWrapper() {
     console.log(this.who);
     console.log(this.from);
     if (this.who && this.from) {
-      this.fuckOff(this.who, this.from)
+      this.goFY(this.who, this.from)
     }
 
   }
 
-  fuckOff(who, from) {
-    let query = 'http://foaas.com/off/' + who + '/' + from;
+  goFY(who, from) {
+    let query = 'http://foaas.com/gfy/' + who + '/' + from;
     this._http.get(query, {}).then((response) => {
       console.log(response);
-      this.fuckOffObject = response.data;
+      this.goFYObject = response.data;
     }, () => {
       console.log('error');
     });
   }
-
+/*
+  clearInputs() {
+    this.who = '';
+    this.from = '';
+  }
+*/
   openLN() {
     this._mdSidenav('left').open();
   }
+
 }

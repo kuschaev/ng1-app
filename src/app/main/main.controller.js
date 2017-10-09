@@ -7,7 +7,7 @@ export class MainController {
     this.routes = [
       {
         route: 'app.foaas',
-        name: 'Fuck Off as a service'
+        name: 'FOAAS'
       }, {
         route: 'app.maps',
         name: 'Maps'
